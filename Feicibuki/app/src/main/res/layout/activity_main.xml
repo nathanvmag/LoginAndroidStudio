@@ -12,12 +12,6 @@
     tools:context="nathanepotengy.com.feicibuki.MainActivity"
     android:theme="@style/AppTheme">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/logo"
-        android:id="@+id/imageView4" />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,8 +41,7 @@
         android:layout_marginTop="40dp"
         android:id="@+id/button2"
         android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="LoginBT (MainActivity)" />
+        android:layout_height="50dp" />
 
     <TextView
         android:layout_width="200dp"
@@ -59,6 +52,104 @@
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:visibility="visible" />
+
+    <TextView
+        android:text="Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        tools:text="Registrar"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/FeedBack"
+        android:layout_alignStart="@+id/FeedBack"
+        android:layout_alignRight="@+id/FeedBack"
+        android:layout_alignEnd="@+id/FeedBack"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Login"
+        android:hint="Login"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/Pass"
+        android:hint="Pass"
+        android:visibility="invisible" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/RegButton"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Repass"
+        android:hint="Repeat pass"
+        android:visibility="invisible"
+        android:layout_below="@+id/Pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:text="BackLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/FeedbackReg" />
+
+    <TextView
+        android:text="Help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Help"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/Register"
+        android:layout_alignBottom="@+id/Register"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
 
 
 </RelativeLayout>
